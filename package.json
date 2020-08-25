@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Fodilahy-mena/server-side/issues"
   },
-  "homepage": "https://github.com/Fodilahy-mena/server-side#readme"
+  "homepage": "https://github.com/Fodilahy-mena/server-side#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
