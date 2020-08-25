@@ -1,6 +1,8 @@
-<p>Hello from:</p>
-<ol>
-  <li>Node.js</li>
-  <li>Express</li>
-  <li>and now… Nunjucks</li>
-</ol>
+
+const isItFriday = true;
+
+{% if isItFriday %}
+  <p>Hey hey hey! It's Friday! 🎉</p>
+{% else %}
+  <p>Is it Friday yet? 🥱</p>
+{% endif %}
