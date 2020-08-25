@@ -1,4 +1,6 @@
 
+const nunjucks = require('nunjucks');
+
 console.log('Greetings from Node and index.js! 🙃');
 
 // We need Express to act as our application server
@@ -13,10 +15,14 @@ const app = express();
 const port = 3000;
 
 app.get('/', (request, response) => {
-  console.log('Request: /');
-  response.sendFile(__dirname + '/index.html');
+  response.render('./views/index.html.njk');
 });
 
 app.listen(port, () => {
   console.log(`app is running here: http://localhost:${port}`);
+});
+
+nunjucks.configure({
+  autoescape: true,
+  express: app
 });
